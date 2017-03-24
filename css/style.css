@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "BoonTook Ultra";
+	src: url(../fonts/woff2/BoonTook-Ultra.woff2) format("woff2"),
+	url(../fonts/woff/BoonTook-Ultra.woff) format("woff"),
+	url(../fonts/otf/BoonTook-Ultra.otf) format("otf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+html, body {
+	margin: 0;
+	font-family: Leelawadee;
+	font-size: 20px;
+}
+img {
+	user-drag: none;
+	-webkit-user-drag: none;
+}
+hr {
+	width: 80%;
+	max-width: 500px;
+	border: 5px solid #FF5200;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: "BoonTook Ultra";
+}
+h1 {
+	font-size: 2em;
+	margin-bottom: 0;
+}
+p {
+	font-size: 1em;
+}
+p.caption {
+	text-align: center;
+	border-top: 5px solid #77024D;
+	color: #77024D;
+	padding-top: 0.5em;
+}
+p.caption img {
+	width: 1em;
+	position: relative;
+	top: 0.15em;
+}
+.textbox {
+	margin-bottom: 2em;
+	text-align: center;
+}
+.text-center {
+	text-align: center;
+}
+
+.content {
+	margin-top: 3em;
+}
+
+.title-wrap {
+	padding: 3em 1em;
+}
+h1.title {
+	font-size: 4em;
+	text-align: center;
+	margin: 0;
+}
+h1 span {
+	color: #FF5200;
+}
+img.fullwidth {
+	display: block;
+	width: 100%;
+}
+a.button {
+	display: block;
+	width: 6em;
+	padding: 1em;
+	background: #FF5200;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	margin: 1.5em auto 3em;
+}
+a.button:hover {
+	background: #C31207;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 375px) {
+	.title-wrap {
+		padding: 1.5em 0 1em;
+	}
+	h1, h1.title {
+		font-size: 1.5em;
+	}
+	hr {
+		border: 3px solid #FF5200;
+	}
+	.content {
+		margin-top: 1.5em;
+	}
+}
