@@ -13,6 +13,12 @@ html, body {
 	margin: 0;
 	font-family: Leelawadee;
 	font-size: 20px;
+	min-height: 100vh;
+}
+body {
+	border: 10px solid #FF5200;
+	padding-bottom: 3em;
+	min-height: 100vh;
 }
 img {
 	user-drag: none;
@@ -32,6 +38,7 @@ h1 {
 }
 p {
 	font-size: 1em;
+	font-family: Maitree;
 }
 p.caption {
 	text-align: center;
@@ -45,7 +52,7 @@ p.caption img {
 	top: 0.15em;
 }
 .textbox {
-	margin-bottom: 2em;
+	margin: 2em auto;
 	text-align: center;
 }
 .text-center {
@@ -53,7 +60,7 @@ p.caption img {
 }
 
 .content {
-	margin-top: 3em;
+	margin-top: 2em;
 }
 
 .title-wrap {
@@ -64,12 +71,33 @@ h1.title {
 	text-align: center;
 	margin: 0;
 }
-h1 span {
+h1 span, h2 span {
 	color: #FF5200;
 }
 img.fullwidth {
 	display: block;
 	width: 100%;
+}
+img.img-center {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
+img.ubuntu {
+	max-width: 350px;
+}
+img.ubuntu.large {
+	max-width: 603px;
+}
+img.win-xp {
+	max-width: 568px;
+}
+img.win-10 {
+	max-width: 539px;
+}
+video {
+	width: 100%;
+	margin-top: 2em;
 }
 a.button {
 	display: block;
@@ -79,15 +107,42 @@ a.button {
 	color: #fff;
 	text-decoration: none;
 	text-align: center;
-	margin: 1.5em auto 3em;
 }
 a.button:hover {
 	background: #C31207;
 }
+a.button.grey {
+	background: #cecece;
+	color: #000;
+}
+a.button.grey:hover {
+	background: #adadad;
+}
+a.button.pulse {
+	animation: pulse 0.7s infinite alternate;
+}
+.btn-group {
+	margin: 1.5em auto 0;
+	text-align: center;
+}
+.btn-group > a.button {
+	display: inline-block;
+}
 
 /* MEDIA QUERIES */
 
+@media (max-width: 768px) {
+	.content {
+		margin-top: 1.4em;
+	}
+	.title-wrap {
+		padding: 2em 0 1.8em;
+	}
+}
 @media (max-width: 375px) {
+	body {
+		border-width: 6px;
+	}
 	.title-wrap {
 		padding: 1.5em 0 1em;
 	}
@@ -100,4 +155,14 @@ a.button:hover {
 	.content {
 		margin-top: 1.5em;
 	}
+}
+
+/* ANIMATION */
+@-webkit-keyframes pulse {
+	from {background: #FF5200;}
+	to {background: #C31207;}
+}
+@keyframes pulse {
+	from {background: #FF5200;}
+	to {background: #C31207;}
 }
