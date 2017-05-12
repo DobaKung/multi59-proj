@@ -66,6 +66,10 @@ p.caption img {
 .title-wrap {
 	padding: 3em 1em;
 }
+.title-wrap p {
+	text-align: center;
+	margin: 0;
+}
 h1.title {
 	font-size: 4em;
 	text-align: center;
@@ -146,8 +150,15 @@ a.button.pulse {
 	.title-wrap {
 		padding: 1.5em 0 1em;
 	}
+	.title-wrap p {
+		font-size: 0.7em;
+	}
 	h1, h1.title {
 		font-size: 1.5em;
+	}
+	h1.title {
+		margin: 0.7em 0;
+		line-height: 1em;
 	}
 	hr {
 		border: 3px solid #FF5200;
